@@ -1,0 +1,7 @@
+2019-01-31 14:10:05,598 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
+2019-01-31 14:29:20,038 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
+2019-01-31 15:26:59,992 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
+2019-01-31 15:34:27,310 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
+2019-01-31 15:45:43,337 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.className: android.webkit.WebView}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-01-31 15:45:51,286 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
+2019-01-31 16:08:02,721 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
