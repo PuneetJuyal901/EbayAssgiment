@@ -3,8 +3,9 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ebay.testcases.TC_001VerifyIfSerachHasResults">
+      <class name="com.ebay.testcases.TC_002VerifySellingAproduct">
         <methods>
+          <include name="verifySellingItems" invocation-numbers="0"/>
           <include name="getResult"/>
           <include name="SignIn"/>
           <include name="setup"/>
@@ -12,9 +13,8 @@
           <include name="appClose"/>
           <include name="closeExtentReport"/>
           <include name="startApp"/>
-          <include name="searchForitems" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.ebay.testcases.TC_001VerifyIfSerachHasResults -->
+      </class> <!-- com.ebay.testcases.TC_002VerifySellingAproduct -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

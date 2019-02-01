@@ -7,10 +7,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.test.ebay.utility.CreateSession;
 
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.WaitOptions;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
+import static io.appium.java_client.touch.offset.ElementOption.element;
+
 
 public class BasePage {
 	
@@ -69,10 +80,34 @@ public class BasePage {
 		CreateSession.driver.pressKey(new KeyEvent(AndroidKey.HOME));
 	}
 	
+	public void scrollTillWarranty(AndroidDriver<WebElement>driver)
+	{
+		CreateSession.driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Warranty\"));");
+	}
+	
+	public void scrollTillFormatAPrice(AndroidDriver<WebElement>driver)
+	{
+		CreateSession.driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(index(\"7\"));");
+	}
+	
+	public void scrollDown(AndroidDriver<WebElement>driver,WebElement element1,WebElement element2) {
+		TouchAction action = new TouchAction(CreateSession.driver);
+		
+		action.longPress(element(element1)).moveTo(element(element2)).release().perform();
+	     
+	}
+	
+	public void switchToAlert(AndroidDriver<WebElement>driver)
+	{
+		CreateSession.driver.switchTo().alert();
+	}
+ 
+	}
+	
 	
 
 	
-}
+
 
 	
 	

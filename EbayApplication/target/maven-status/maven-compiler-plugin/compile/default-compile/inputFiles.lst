@@ -1,6 +1,8 @@
-/Users/puneetjuyal/eclipse-workspace/EbayApplication/src/main/java/com/test/ebay/utility/ConfigReader.java
-/Users/puneetjuyal/eclipse-workspace/EbayApplication/src/main/java/com/ebay/pages/BasePage.java
-/Users/puneetjuyal/eclipse-workspace/EbayApplication/src/main/java/com/ebay/pages/HomePage.java
-/Users/puneetjuyal/eclipse-workspace/EbayApplication/src/main/java/com/test/ebay/TestBase/TestBase.java
-/Users/puneetjuyal/eclipse-workspace/EbayApplication/src/main/java/com/ebay/pages/SignInPage.java
-/Users/puneetjuyal/eclipse-workspace/EbayApplication/src/main/java/com/test/ebay/utility/CreateSession.java
+/Users/puneetjuyal/git/EbayAssgiment/EbayApplication/src/main/java/com/test/ebay/utility/JsonReader.java
+/Users/puneetjuyal/git/EbayAssgiment/EbayApplication/src/main/java/com/test/ebay/utility/ConfigReader.java
+/Users/puneetjuyal/git/EbayAssgiment/EbayApplication/src/main/java/com/ebay/pages/SignInPage.java
+/Users/puneetjuyal/git/EbayAssgiment/EbayApplication/src/main/java/com/test/ebay/utility/CreateSession.java
+/Users/puneetjuyal/git/EbayAssgiment/EbayApplication/src/main/java/com/ebay/pages/HomePage.java
+/Users/puneetjuyal/git/EbayAssgiment/EbayApplication/src/main/java/com/ebay/pages/SellingPage.java
+/Users/puneetjuyal/git/EbayAssgiment/EbayApplication/src/main/java/com/test/ebay/TestBase/TestBase.java
+/Users/puneetjuyal/git/EbayAssgiment/EbayApplication/src/main/java/com/ebay/pages/BasePage.java

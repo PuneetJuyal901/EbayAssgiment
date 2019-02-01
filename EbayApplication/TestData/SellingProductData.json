@@ -1,0 +1,13 @@
+{
+	"SellingProduct data"	:
+	[
+		{
+			"ProductName" :  "speaker",
+			"Country"     :  "India",
+			"descreption" : "This is test entry",
+			"Price"       : "1000"
+			
+		}
+		
+	]
+}

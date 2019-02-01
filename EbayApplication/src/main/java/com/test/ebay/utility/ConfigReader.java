@@ -70,5 +70,12 @@ public class ConfigReader {
 		return path;
 	}
 	
+	public String sellingListYourItems()
+	{
 
-}
+		String path=prop.getProperty("listYourItem");
+		return path;
+	}
+	}
+	
+

@@ -67,5 +67,11 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 	{
 		return noResultFound.size();
 	}
+	
+	public void menuButtonClick()
+	{
+		isvisible(menuButton,CreateSession.driver);
+		menuButton.click();
+	}
 
 }

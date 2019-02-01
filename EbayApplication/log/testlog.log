@@ -1,7 +1,52 @@
-2019-01-31 14:10:05,598 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
-2019-01-31 14:29:20,038 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
-2019-01-31 15:26:59,992 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
-2019-01-31 15:34:27,310 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
-2019-01-31 15:45:43,337 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.className: android.webkit.WebView}) (tried for 20 second(s) with 500 milliseconds interval)
-2019-01-31 15:45:51,286 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
-2019-01-31 16:08:02,721 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
+2019-01-31 22:19:03,327 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.id: listing_hub_condition}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-01-31 22:19:17,263 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-01-31 22:24:19,223 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-01-31 22:26:41,603 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Audio & Home Entertainment']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-01-31 22:26:51,828 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-01-31 22:32:43,347 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Audio & Home Entertainment']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-01-31 22:32:58,330 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-01-31 23:38:47,581 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.CheckedTextView[@text='Unbranded']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-01-31 23:38:56,680 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 00:19:01,291 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.CheckedTextView[@text='Unbranded']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 00:19:12,402 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 00:21:46,299 - com.ebay.pages.BasePage -INFO - Element not visible is org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: UiAUtomator shut down unexpectedly
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Puneets-MacBook-Pro.local', ip: '192.168.31.179', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '1.8.0_191'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /Users/puneetjuyal/git/Ebay..., appActivity: com.ebay.mobile.activities...., appPackage: com.ebay.mobile, appWaitActivity: com.ebay.mobile.activities...., appWaitPackage: com.ebay.mobile, databaseEnabled: false, desired: {app: /Users/puneetjuyal/git/Ebay..., deviceName: Nexus_5 , platformName: android}, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 5.1.1, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: f9b3c045-cb9c-4d78-a566-419970579007
+*** Element info: {Using=class name, value=android.widget.TextView}
+2019-02-01 00:21:46,358 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
+2019-02-01 00:24:18,648 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 00:36:16,530 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 00:44:13,533 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.CheckedTextView[@text='Enter your own]}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 00:44:25,764 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 00:55:14,049 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Warranty']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 00:55:34,773 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 01:22:51,639 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.Button[@text='Manufacturer Warranty']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 01:23:01,826 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 02:09:24,080 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.className: android.widget.EditText}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 02:09:46,313 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 02:15:24,202 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 02:23:23,442 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 02:44:00,352 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 02:48:23,345 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 02:55:39,289 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: android.view.View[@index='6']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 02:55:50,995 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 03:00:32,792 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 04:15:51,944 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: android.view.View[@index='6']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 04:16:03,269 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 04:23:35,265 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Flat Rate Courier - Delivery anywhere in India']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 04:23:48,240 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 04:42:27,396 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Flat Rate Courier - Delivery anywhere in India']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 04:42:37,791 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 05:15:44,790 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Flat Rate Courier - Delivery anywhere in India']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 05:16:00,757 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 05:31:35,523 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Surface Delivery - Nationwide land transport delivery']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 05:31:45,344 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 05:39:13,533 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Audio & Home Entertainment']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 05:39:22,452 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 05:56:26,907 - com.ebay.pages.BasePage -INFO - Element which is not clickable isExpected condition failed: waiting for element to be clickable: Located by By.chained({By.xpath: //android.widget.TextView[@text='Surface Delivery - Nationwide land transport delivery']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-01 05:56:36,296 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 09:23:44,428 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-01 09:56:28,380 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems

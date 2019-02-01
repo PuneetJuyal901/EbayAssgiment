@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="com.ebay.testcases.TC_002VerifySellingAproduct">
+      <class name="com.ebay.testcases.TC_001VerifyIfSerachHasResults">
         <methods>
-          <include name="verifySellingItems" invocation-numbers="0"/>
           <include name="getResult"/>
           <include name="SignIn"/>
           <include name="setup"/>
@@ -13,8 +12,9 @@
           <include name="appClose"/>
           <include name="closeExtentReport"/>
           <include name="startApp"/>
+          <include name="searchForitems" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.ebay.testcases.TC_002VerifySellingAproduct -->
+      </class> <!-- com.ebay.testcases.TC_001VerifyIfSerachHasResults -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
