@@ -2,11 +2,13 @@ package com.test.ebay.utility;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
 	
 	Properties prop;
+	FileInputStream fis=null;
 	
 	public ConfigReader() 
 	{
@@ -14,7 +16,7 @@ public class ConfigReader {
 	
 		try {
 			File src= new File(System.getProperty("user.dir")+"//configuration//config.properties");
-			 FileInputStream fis= new FileInputStream(src);
+			  fis= new FileInputStream(src);
 			 prop= new Properties(); 
 			
 			 
@@ -23,20 +25,28 @@ public class ConfigReader {
 			catch (Exception e) {
 				
 			     System.out.println("Exception is" +e.getMessage());
-			}	
+			}
+			     
+			     finally {
+			    	    if (fis != null) {
+			    	        try {
+			    	        	fis.close();
+			    	        } catch (IOException e) {
+			    	            
+			    	            e.printStackTrace();
+			    	        }
+			    	    }
+			}}
 				
-		}
 	
 	public  String os()
 	{
-		String os= prop.getProperty("operatingSystem");
-		return os;
+		return prop.getProperty("operatingSystem");
 	}
 	
 	public String deviceName()
 	{
-		String deviceName =prop.getProperty("deviceName");
-		return deviceName;
+		return prop.getProperty("deviceName");
 	}
 	
 	public String jsonPath()
@@ -47,34 +57,32 @@ public class ConfigReader {
 	
 	public String log4jPath()
 	{
-		String path = prop.getProperty("log4jPath");
-		return path;
+		return prop.getProperty("log4jPath");
 		
 	}
 	
 	public String ebayAutomationReportPath()
 	{
-		String path = prop.getProperty("reportName");
-		return path;
+		 return prop.getProperty("reportName");
 	}
 	
 	public String registerUserName()
 	{
-		String path =prop.getProperty("email");
-		return path;
+	
+		return prop.getProperty("email");
 	}
 	
 	public String registeredpassword()
 	{
-		String path=prop.getProperty("password");
-		return path;
+		
+		return prop.getProperty("password");
 	}
 	
 	public String sellingListYourItems()
 	{
 
-		String path=prop.getProperty("listYourItem");
-		return path;
+		
+		return prop.getProperty("listYourItem");
 	}
 	}
 	

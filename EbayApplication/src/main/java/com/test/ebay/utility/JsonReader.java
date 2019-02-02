@@ -11,15 +11,27 @@ import com.google.gson.JsonSyntaxException;
 
 public class JsonReader {
 	
-	public static Object[][] getdata(String JSON_path, String typeData, int totalDataRow, int totalColumnEntry) throws JsonIOException, JsonSyntaxException, FileNotFoundException
-	{ 
+	public static Object[][] getdata(String JSON_path, String typeData, int totalDataRow, int totalColumnEntry) {
 		JsonParser jsonParser =  new JsonParser();
-		JsonObject jsonObj = jsonParser.parse(new FileReader(JSON_path)).getAsJsonObject();
+		JsonObject jsonObj = null;
+		
+		try {
+			jsonObj = jsonParser.parse(new FileReader(JSON_path)).getAsJsonObject();
+		} catch (JsonIOException e) {
+			
+			e.printStackTrace();
+		} catch (JsonSyntaxException e) {
+			
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
         JsonArray array = (JsonArray) jsonObj.get(typeData);
         return searchJsonElement(array, totalDataRow, totalColumnEntry);
 	}
 	
-	public static Object[][] searchJsonElement(JsonArray jsonArray, int totalDataRow, int totalColumnEntry) throws NullPointerException 
+	public static Object[][] searchJsonElement(JsonArray jsonArray, int totalDataRow, int totalColumnEntry) 
 	{			
 		Object[][] matrix = new Object[totalDataRow][totalColumnEntry];
         int i =0;
