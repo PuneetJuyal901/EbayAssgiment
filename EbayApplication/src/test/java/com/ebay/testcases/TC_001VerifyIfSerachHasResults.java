@@ -1,6 +1,8 @@
 package com.ebay.testcases;
 
 import java.io.IOException;
+
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -10,9 +12,9 @@ import com.ebay.pages.HomePage;
 import com.ebay.pages.SignInPage;
 import com.test.ebay.TestBase.TestBase;
 import com.test.ebay.utility.ConfigReader;
-import com.test.ebay.utility.CreateSession;
 import com.test.ebay.utility.JsonReader;
 import bsh.ParseException;
+import io.appium.java_client.android.AndroidDriver;
 
 public class TC_001VerifyIfSerachHasResults extends TestBase {
 	
@@ -24,8 +26,8 @@ public class TC_001VerifyIfSerachHasResults extends TestBase {
 	@BeforeClass
 	public void SignIn()
 	{
-	    homepage  = new HomePage(CreateSession.driver);
-	    signInPage= new SignInPage(CreateSession.driver);
+	    homepage  = new HomePage(driver);
+	    signInPage= new SignInPage(driver);
 	    homepage.clickOnSignIn();
 	    signInPage.signInAsARegisteredUser();    
 	}

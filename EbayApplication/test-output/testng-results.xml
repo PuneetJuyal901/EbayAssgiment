@@ -1,107 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="354999" started-at="2019-02-02T11:13:06Z" finished-at="2019-02-02T11:19:01Z">
+  <suite name="Default suite" duration-ms="251364" started-at="2019-02-04T12:43:20Z" finished-at="2019-02-04T12:47:31Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="112775" started-at="2019-02-02T11:13:06Z" finished-at="2019-02-02T11:14:59Z">
-      <class name="com.ebay.testcases.TC_001VerifyIfSerachHasResults">
-        <test-method status="PASS" signature="startApp()[pri:0, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2]" name="startApp" is-config="true" duration-ms="15815" started-at="2019-02-02T11:13:06Z" finished-at="2019-02-02T11:13:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startApp -->
-        <test-method status="PASS" signature="SignIn()[pri:0, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2]" name="SignIn" is-config="true" duration-ms="39601" started-at="2019-02-02T11:13:22Z" finished-at="2019-02-02T11:14:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SignIn -->
-        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2]" name="nameBefore" is-config="true" duration-ms="19" started-at="2019-02-02T11:14:02Z" finished-at="2019-02-02T11:14:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.ebay.testcases.TC_001VerifyIfSerachHasResults.searchForitems(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nameBefore -->
-        <test-method status="PASS" signature="searchForitems(java.lang.String)[pri:1, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2]" name="searchForitems" duration-ms="34320" started-at="2019-02-02T11:14:02Z" data-provider="Product data" finished-at="2019-02-02T11:14:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TV]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchForitems -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2]" name="getResult" is-config="true" duration-ms="5" started-at="2019-02-02T11:14:36Z" finished-at="2019-02-02T11:14:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchForitems status=SUCCESS method=TC_001VerifyIfSerachHasResults.searchForitems(java.lang.String)[pri:1, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2]" name="nameBefore" is-config="true" duration-ms="1" started-at="2019-02-02T11:14:36Z" finished-at="2019-02-02T11:14:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.ebay.testcases.TC_001VerifyIfSerachHasResults.searchForitems(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nameBefore -->
-        <test-method status="PASS" signature="searchForitems(java.lang.String)[pri:1, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2]" name="searchForitems" duration-ms="20308" started-at="2019-02-02T11:14:36Z" data-provider="Product data" finished-at="2019-02-02T11:14:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abcd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchForitems -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2]" name="getResult" is-config="true" duration-ms="1" started-at="2019-02-02T11:14:56Z" finished-at="2019-02-02T11:14:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchForitems status=SUCCESS method=TC_001VerifyIfSerachHasResults.searchForitems(java.lang.String)[pri:1, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="appClose()[pri:0, instance:com.ebay.testcases.TC_001VerifyIfSerachHasResults@527740a2]" name="appClose" is-config="true" duration-ms="2624" started-at="2019-02-02T11:14:56Z" finished-at="2019-02-02T11:14:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appClose -->
-      </class> <!-- com.ebay.testcases.TC_001VerifyIfSerachHasResults -->
-    </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="237206" started-at="2019-02-02T11:15:04Z" finished-at="2019-02-02T11:19:01Z">
+    <test name="Default test" duration-ms="251364" started-at="2019-02-04T12:43:20Z" finished-at="2019-02-04T12:47:31Z">
       <class name="com.ebay.testcases.TC_002VerifySellingAproduct">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@47ef968d]" name="setup" is-config="true" duration-ms="5283" started-at="2019-02-02T11:13:01Z" finished-at="2019-02-02T11:13:06Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@2d6eabae]" name="setup" is-config="true" duration-ms="5258" started-at="2019-02-04T12:43:14Z" finished-at="2019-02-04T12:43:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="startApp()[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@47ef968d]" name="startApp" is-config="true" duration-ms="17650" started-at="2019-02-02T11:15:04Z" finished-at="2019-02-02T11:15:22Z">
+        <test-method status="PASS" signature="startApp()[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@2d6eabae]" name="startApp" is-config="true" duration-ms="22008" started-at="2019-02-04T12:43:20Z" finished-at="2019-02-04T12:43:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method status="PASS" signature="SignIn()[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@47ef968d]" name="SignIn" is-config="true" duration-ms="39252" started-at="2019-02-02T11:15:22Z" finished-at="2019-02-02T11:16:01Z">
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@2d6eabae]" name="SignIn" is-config="true" duration-ms="41798" started-at="2019-02-04T12:43:42Z" finished-at="2019-02-04T12:44:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignIn -->
-        <test-method status="PASS" signature="verifySellingItems(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.ebay.testcases.TC_002VerifySellingAproduct@47ef968d]" name="verifySellingItems" duration-ms="179607" started-at="2019-02-02T11:16:01Z" data-provider="SellingProductdata" finished-at="2019-02-02T11:19:01Z">
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@2d6eabae]" name="nameBefore" is-config="true" duration-ms="6" started-at="2019-02-04T12:44:24Z" finished-at="2019-02-04T12:44:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ebay.testcases.TC_002VerifySellingAproduct.verifySellingItems(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="verifySellingItems(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.ebay.testcases.TC_002VerifySellingAproduct@2d6eabae]" name="verifySellingItems" duration-ms="186899" started-at="2019-02-04T12:44:24Z" data-provider="SellingProductdata" finished-at="2019-02-04T12:47:31Z">
           <params>
             <param index="0">
               <value>
@@ -127,37 +56,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySellingItems -->
-        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@47ef968d]" name="nameBefore" is-config="true" duration-ms="0" started-at="2019-02-02T11:16:01Z" finished-at="2019-02-02T11:16:01Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@2d6eabae]" name="getResult" is-config="true" duration-ms="4" started-at="2019-02-04T12:47:31Z" finished-at="2019-02-04T12:47:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.ebay.testcases.TC_002VerifySellingAproduct.verifySellingItems(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nameBefore -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@47ef968d]" name="getResult" is-config="true" duration-ms="1" started-at="2019-02-02T11:19:01Z" finished-at="2019-02-02T11:19:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySellingItems status=SUCCESS method=TC_002VerifySellingAproduct.verifySellingItems(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.ebay.testcases.TC_002VerifySellingAproduct@47ef968d] output={null}]]]>
+                <![CDATA[[TestResult name=verifySellingItems status=SUCCESS method=TC_002VerifySellingAproduct.verifySellingItems(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.ebay.testcases.TC_002VerifySellingAproduct@2d6eabae] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="appClose()[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@47ef968d]" name="appClose" is-config="true" duration-ms="689" started-at="2019-02-02T11:19:01Z" finished-at="2019-02-02T11:19:01Z">
+        <test-method status="PASS" signature="appClose()[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@2d6eabae]" name="appClose" is-config="true" duration-ms="554" started-at="2019-02-04T12:47:31Z" finished-at="2019-02-04T12:47:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appClose -->
-        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@47ef968d]" name="closeExtentReport" is-config="true" duration-ms="484" started-at="2019-02-02T11:19:06Z" finished-at="2019-02-02T11:19:07Z">
+        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.ebay.testcases.TC_002VerifySellingAproduct@2d6eabae]" name="closeExtentReport" is-config="true" duration-ms="504" started-at="2019-02-04T12:47:36Z" finished-at="2019-02-04T12:47:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeExtentReport -->
       </class> <!-- com.ebay.testcases.TC_002VerifySellingAproduct -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

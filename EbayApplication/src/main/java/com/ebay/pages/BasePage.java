@@ -4,40 +4,29 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import com.test.ebay.utility.CreateSession;
-
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import io.appium.java_client.touch.LongPressOptions;
-import io.appium.java_client.touch.WaitOptions;
-
-import org.openqa.selenium.WebElement;
-
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import static io.appium.java_client.touch.offset.ElementOption.element;
 
 
 public class BasePage {
-	
+	public AndroidDriver<WebElement>driver;
 
 	public static final Logger logger = Logger.getLogger(BasePage.class.getName());
-		
 	
 	public BasePage(AndroidDriver<WebElement>driver)
 	{
+		this.driver=driver;
 		PageFactory.initElements( new AppiumFieldDecorator(driver), this);
 		
 	}
 	
 	public  boolean isClickable(WebElement element,  AndroidDriver<WebElement>driver) {
 		try {
-			WebDriverWait wait = new WebDriverWait(CreateSession.driver,20);
+			WebDriverWait wait = new WebDriverWait(driver,20);
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 			return true;
 		} catch (Exception e) {
@@ -49,7 +38,7 @@ public class BasePage {
 
 	public boolean  isvisible(WebElement element, AndroidDriver<WebElement>driver) {
 		try {
-			WebDriverWait wait = new WebDriverWait(CreateSession.driver, 20);
+			WebDriverWait wait = new WebDriverWait(driver, 20);
 			wait.until(ExpectedConditions.visibilityOf((element))); 
 			return true;
 
@@ -61,7 +50,7 @@ public class BasePage {
 
 	public  boolean isNotVisible(WebElement element,AndroidDriver<WebElement>driver) {
 		try {
-			WebDriverWait wait = new WebDriverWait(CreateSession.driver,20);
+			WebDriverWait wait = new WebDriverWait(driver,20);
 			wait.until(ExpectedConditions.invisibilityOf(element));
 			return true;
 		} catch (Exception e) {
@@ -72,26 +61,26 @@ public class BasePage {
 	
 	public void clickOnAppBackButton(AndroidDriver<WebElement>driver)
 	{
-		CreateSession.driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 	}
 	
 	public void clickOnAppHomeButton(AndroidDriver<WebElement>driver)
 	{
-		CreateSession.driver.pressKey(new KeyEvent(AndroidKey.HOME));
+		driver.pressKey(new KeyEvent(AndroidKey.HOME));
 	}
 	
 	public void scrollTillWarranty(AndroidDriver<WebElement>driver)
 	{
-		CreateSession.driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Warranty\"));");
+		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Warranty\"));");
 	}
 	
 	public void scrollTillFormatAPrice(AndroidDriver<WebElement>driver)
 	{
-		CreateSession.driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(index(\"7\"));");
+		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(index(\"7\"));");
 	}
 	
 	public void scrollDown(AndroidDriver<WebElement>driver,WebElement element1,WebElement element2) {
-		TouchAction action = new TouchAction(CreateSession.driver);
+		TouchAction action = new TouchAction(driver);
 		
 		action.longPress(element(element1)).moveTo(element(element2)).release().perform();
 	     
@@ -99,7 +88,7 @@ public class BasePage {
 	
 	public void switchToAlert(AndroidDriver<WebElement>driver)
 	{
-		CreateSession.driver.switchTo().alert();
+		driver.switchTo().alert();
 	}
  
 	}

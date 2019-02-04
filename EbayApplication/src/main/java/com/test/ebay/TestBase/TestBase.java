@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
@@ -12,6 +13,8 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -24,7 +27,8 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.test.ebay.utility.ConfigReader;
-import com.test.ebay.utility.CreateSession;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 	
 	
 	
@@ -38,6 +42,10 @@ import com.test.ebay.utility.CreateSession;
 		String testName;
 		public  static final Logger  logger = Logger.getLogger(TestBase.class.getName());
 		String log4Jpath = System.getProperty("user.dir") + reader.log4jPath();
+		public   AndroidDriver<WebElement> driver;
+		String operatingSystem =reader.os();
+		String deviceName = reader.deviceName();
+		
 		
 		
 	@BeforeSuite
@@ -60,7 +68,15 @@ import com.test.ebay.utility.CreateSession;
 	@BeforeTest
 	public void startApp() throws MalformedURLException
 	{
-		CreateSession.appStart(reader.os(),reader.deviceName());
+		{
+			if(operatingSystem.trim().equalsIgnoreCase("Android"))
+			{
+				DesiredCapabilities cap = new DesiredCapabilities();
+				cap.setCapability(MobileCapabilityType.DEVICE_NAME,reader.deviceName());
+				cap.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+"/EbayApk"+"/eBay.apk");
+				driver = new AndroidDriver<WebElement>(new URL("http://0.0.0.0:4723/wd/hub"),cap);
+			}
+		}
 	}
 	
 
@@ -80,7 +96,7 @@ import com.test.ebay.utility.CreateSession;
 		if (result.getStatus() == ITestResult.FAILURE) {
 			try {
 				
-			 screenshotPath = capture(CreateSession.driver, testName);
+			 screenshotPath = capture(driver, testName);
 			 } catch (Exception e) {
 			 e.printStackTrace();
 			 }
@@ -101,9 +117,9 @@ import com.test.ebay.utility.CreateSession;
 		extent.endTest(Reportlogger);
 	
 	}
-	 public static String capture(WebDriver instance , String screenShotName) throws IOException {
+	 public static String capture( AndroidDriver<WebElement> driver , String screenShotName) throws IOException {
 		 
-		 TakesScreenshot ts = (TakesScreenshot) CreateSession.driver;
+		 TakesScreenshot ts = (TakesScreenshot) driver;
 		 File source = ts.getScreenshotAs(OutputType.FILE);
 		 String destination = System.getProperty("user.dir") + "//ScreenShots//"+screenShotName+"in"+timestamp()+".png";
 		 File finalDestination = new File(destination);
@@ -130,7 +146,7 @@ import com.test.ebay.utility.CreateSession;
 	@AfterTest
 	public void appClose()
 	{
-	  CreateSession.driver.closeApp();
+	  driver.closeApp();
 	}
 	
 	

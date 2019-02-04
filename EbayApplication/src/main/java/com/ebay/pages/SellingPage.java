@@ -1,9 +1,6 @@
 package com.ebay.pages;
 
 import org.openqa.selenium.WebElement;
-
-import com.test.ebay.utility.CreateSession;
-
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
@@ -161,283 +158,139 @@ public class SellingPage extends BasePage {
 	 
 	 
 	 
-	 
-	 
-	 public void sellingButtonClick()
-	 {
-		 isvisible(selling,CreateSession.driver);
+	 public void reachTillImageClick(String productName) {
+			
+		 isvisible(selling,driver);
 		 selling.click();
-		 
-	 }
-	 
-	 public void startSellingNowButtonClick()
-	 {
-		 isvisible(startSellingNowButton,CreateSession.driver);
+		 isvisible(startSellingNowButton,driver);
 		 startSellingNowButton.click();
-	 }
-	 
-	 public void sellingItemSearchClick(String productName) {
-
-		 isvisible(sellingItemSearch,CreateSession.driver);
+		 isvisible(sellingItemSearch,driver);
 		 sellingItemSearch.sendKeys(productName);
-		 
-	 }
-	 
-	 public void sellingItemSerachListClick() {
-		 isvisible(sellingItemSerachList,CreateSession.driver);
+		 isvisible(sellingItemSerachList,driver);
 		 sellingItemSerachList.click();
-		 
-		 
-	 }
-	 
-	 public void categoryAudioAndHomeClick() {
-		 
-		 isvisible(categoryAudioAndHome,CreateSession.driver);
+		 isvisible(categoryAudioAndHome,driver);
 		 categoryAudioAndHome.click();
-		 
-	 }
-	 
-	 public void subCategoryBluetoothAndSpeakersClick(){
-		 isvisible(subCategoryBluetoothAndSpeakers,CreateSession.driver);
+		 isvisible(subCategoryBluetoothAndSpeakers,driver);
 		 subCategoryBluetoothAndSpeakers.click();
-	 }
-	 
-	 public void clickOnItemImageClick(){
-		 isvisible(clickOnItemImage,CreateSession.driver);
+		 isvisible(clickOnItemImage,driver);
 		 clickOnItemImage.click();
-		 	 
 	 }
 	 
-	 public void conditonClick(){
-		 isvisible(conditon,CreateSession.driver);
+	 public void conditionCategoryAndSubCategoryClick()
+	 {
+		 isvisible(conditon,driver);
 		 conditon.click(); 	 
-	 }
-	 
-	 public void conditonSubCategoryNewClick(){
-		 isvisible(conditonSubCategoryNew,CreateSession.driver);
+		 isvisible(conditonSubCategoryNew,driver);
 		 conditonSubCategoryNew.click();
-		 
-	 }
-	 
-	 public void sellingBackButtonClick(){
-		 isvisible(sellingBackButton,CreateSession.driver);
+		 isvisible(sellingBackButton,driver);
 		 sellingBackButton.click();
+		 
 	 }
 	 
-	 public void itemSpecifyCategoryClick() {
-		 isvisible(itemSpecifyCategory,CreateSession.driver);
+	 public void itemitemSpecifyCategoryAndSubCategoryClick(String country)
+	 {
+		 isvisible(itemSpecifyCategory,driver);
 		 itemSpecifyCategory.click();
-		 
-	 }
-	 public void itemSpecifySubCategoryClick() {
-		 isvisible(itemSpecifySubCategory,CreateSession.driver);
+		 isvisible(itemSpecifySubCategory,driver);
 		 itemSpecifySubCategory.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryListUnbrandedClick() {
-		 isvisible(itemSpecifySubCategoryListUnbranded,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryListUnbranded,driver);
 		 itemSpecifySubCategoryListUnbranded.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryListTypeClick(){
-		 isvisible(itemSpecifySubCategoryListType,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryListType,driver);
 		 itemSpecifySubCategoryListType.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryTypeInEarClick() {
-		 isvisible(itemSpecifySubCategoryTypeInEar,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryTypeInEar,driver);
 		 itemSpecifySubCategoryTypeInEar.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryMaxRetailPriceClick(){
-		 isvisible(itemSpecifySubCategoryMaxRetailPrice,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryMaxRetailPrice,driver);
 		 itemSpecifySubCategoryMaxRetailPrice.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryMaxRetailPriceListDontApplyClick() {
-		 isvisible(itemSpecifySubCategoryMaxRetailPriceListDontApply,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryMaxRetailPriceListDontApply,driver);
 		 itemSpecifySubCategoryMaxRetailPriceListDontApply.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryMpnClick() {
-		 isvisible(itemSpecifySubCategoryMpn,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryMpn,driver);
 		 itemSpecifySubCategoryMpn.click(); 
-	 }
-	 
-	 public void itemSpecifySubCategoryListMpnDoesNotAplyClick() {
-		 isvisible(itemSpecifySubCategoryListMpnDoesNotAply,CreateSession.driver);
-		 itemSpecifySubCategoryListMpnDoesNotAply.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryManfactuerDetailsClick() {
-		 isvisible(itemSpecifySubCategoryManfactuerDetails,CreateSession.driver);
-		 itemSpecifySubCategoryManfactuerDetails.click();	 
-	 }
-	 
-	 public void itemSpecifySubCategoryListManfactuerDetailsSeeDescrptionClick() {	 
-	     isvisible(itemSpecifySubCategoryListManfactuerDetailsSeeDescrption,CreateSession.driver);
-	     itemSpecifySubCategoryListManfactuerDetailsSeeDescrption.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryNetQuanClick(){
-		 isvisible(itemSpecifySubCategoryNetQuan,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryListMpnDoesNotAply,driver);
+		 itemSpecifySubCategoryListMpnDoesNotAply.click(); isvisible(itemSpecifySubCategoryManfactuerDetails,driver);
+		 itemSpecifySubCategoryManfactuerDetails.click();	
+		 isvisible(itemSpecifySubCategoryListManfactuerDetailsSeeDescrption,driver);
+		 itemSpecifySubCategoryListManfactuerDetailsSeeDescrption.click();
+		 isvisible(itemSpecifySubCategoryNetQuan,driver);
 		 itemSpecifySubCategoryNetQuan.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryListNetQuanDoNotApplyClick() {
-		 isvisible(itemSpecifySubCategoryListNetQuanDoNotApply,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryListNetQuanDoNotApply,driver);
 		 itemSpecifySubCategoryListNetQuanDoNotApply.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryPackageDimensionClick()
-	 {
-		 isvisible(itemSpecifySubCategoryPackageDimension,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryPackageDimension,driver);
 		 itemSpecifySubCategoryPackageDimension.click();
-		 
-	 }
-	 
-	 public void itemSpecifySubCategoryListPackageDimesnionDoNotApplyClick() {
-		 isvisible(itemSpecifySubCategoryListPackageDimesnionDoNotApply,CreateSession.driver);
+         isvisible(itemSpecifySubCategoryListPackageDimesnionDoNotApply,driver);
 		 itemSpecifySubCategoryListPackageDimesnionDoNotApply.click();
-		 
-	 }
-	 
-	 public void itemSpecifySubCategoryWithWithoutMicClick() {
-		 isvisible(itemSpecifySubCategoryWithWithoutMic,CreateSession.driver);
-		 itemSpecifySubCategoryWithWithoutMic.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryListWithWithoutMicWithMicClick() {
-	 isvisible(itemSpecifySubCategoryListWithWithoutMicWithMic,CreateSession.driver);
-	 itemSpecifySubCategoryListWithWithoutMicWithMic.click();
-	 }
-	 
-	 
-	 public void itemSpecifySubCategoryDateOfPackingClick() {
-		 isvisible(itemSpecifySubCategoryDateOfPacking,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryWithWithoutMic,driver);
+		 itemSpecifySubCategoryWithWithoutMic.click();	 
+		 isvisible(itemSpecifySubCategoryListWithWithoutMicWithMic,driver);
+		 itemSpecifySubCategoryListWithWithoutMicWithMic.click();
+		 isvisible(itemSpecifySubCategoryDateOfPacking,driver);
 		 itemSpecifySubCategoryDateOfPacking.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryListDateOfPackingDoesNotApplyClick () {
-		 isvisible(itemSpecifySubCategoryListDateOfPackingDoesNotApply,CreateSession.driver);
-	     itemSpecifySubCategoryListDateOfPackingDoesNotApply.click();
-
-	  }
-	 
-	 public void itemSpecifySubCategoryConsumerComplaintsClick() {
-		 isvisible(itemSpecifySubCategoryConsumerComplaints,CreateSession.driver);
-		 itemSpecifySubCategoryConsumerComplaints.click();
-		 
-	 }
-	 
-	 public void itemSpecifySubCategoryListConsumerComplaintsClick() {
-		 isvisible(itemSpecifySubCategoryListConsumerComplaints,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryListDateOfPackingDoesNotApply,driver);
+		 itemSpecifySubCategoryListDateOfPackingDoesNotApply.click();
+		 isvisible(itemSpecifySubCategoryConsumerComplaints,driver);
+		 itemSpecifySubCategoryConsumerComplaints.click();		 
+		 isvisible(itemSpecifySubCategoryListConsumerComplaints,driver);
 		 itemSpecifySubCategoryListConsumerComplaints.click();
-	 }
-	 
-	 public void itemSpecifySubCategoryCountryOfOriginClick()
-	 {
-		 isvisible(itemSpecifySubCategoryCountryOfOrigin,CreateSession.driver);
+		 isvisible(itemSpecifySubCategoryCountryOfOrigin,driver);
 		 itemSpecifySubCategoryCountryOfOrigin.click();
+		 isvisible(itemSpecifySubCategoryListCountryOfOriginOfOwn,driver);
+		 itemSpecifySubCategoryListCountryOfOriginOfOwn.click();
+		 isvisible(itemSpecifySubCategoryCountryOfOriginEnter,driver);
+		 itemSpecifySubCategoryCountryOfOriginEnter.sendKeys(country);
+		 isvisible(itemSpecifySubCategoryCountryOfOriginok,driver);
+		 itemSpecifySubCategoryCountryOfOriginok.click();
+		 scrollTillWarranty(driver);
+		 isvisible(itemSpecifySubCategoryWarranty,driver);
+		 itemSpecifySubCategoryWarranty.click();
+		 isvisible(itemSpecifySubCategoryListWarrantymanufactuer,driver);
+		 itemSpecifySubCategoryListWarrantymanufactuer.click();
+		 isvisible(sellingBackButton,driver);
+		 sellingBackButton.click();
+		 		 
 	 }
 	 
-     public void itemSpecifySubCategoryListCountryOfOriginOfOwnClick() {
-	 isvisible(itemSpecifySubCategoryListCountryOfOriginOfOwn,CreateSession.driver);
-	 itemSpecifySubCategoryListCountryOfOriginOfOwn.click();
-     }
-     
-     public void itemSpecifySubCategoryCountryOfOriginEnterClick(String country) {
-		 isvisible(itemSpecifySubCategoryCountryOfOriginEnter,CreateSession.driver);
-		 itemSpecifySubCategoryCountryOfOriginEnter.sendKeys(country);
-    	 
-     }
-     
-    public void itemSpecifySubCategoryCountryOfOriginokClick() {
- 		 isvisible(itemSpecifySubCategoryCountryOfOriginok,CreateSession.driver);
-		 itemSpecifySubCategoryCountryOfOriginok.click();
-    	 
-     }
-  
-    public void itemSpecifySubCategoryWarrantyScrollAndClick() {
-    	 scrollTillWarranty(CreateSession.driver);
-		 isvisible(itemSpecifySubCategoryWarranty,CreateSession.driver);
-		 itemSpecifySubCategoryWarranty.click();
-     }
-  
-    public void itemSpecifySubCategoryListWarrantymanufactuerClick() {
-    	 isvisible(itemSpecifySubCategoryListWarrantymanufactuer,CreateSession.driver);
-		 itemSpecifySubCategoryListWarrantymanufactuer.click();
-	  
-    }
-    
-    public void decriptionCategoryClick()
-    {
-    	isvisible(decriptionCategory,CreateSession.driver);
-		decriptionCategory.click();
-		 	
-    }
-    
-    public void decriptionCategoryEdit(String description)
-    {
-   	 isvisible(decriptionCategoryEdit,CreateSession.driver);
-	 decriptionCategoryEdit.sendKeys(description);
+	 public void clickAndAddDescriptionCategory(String description)
+	 {
+		 isvisible(decriptionCategory,driver);
+		 decriptionCategory.click();
+		 isvisible(decriptionCategoryEdit,driver);
+		 decriptionCategoryEdit.sendKeys(description);
+		 isvisible(sellingBackButton,driver);
+		 sellingBackButton.click();		 	
+	 }
 	 
-    }
-    
-    public void scrollDown()
-    {
-   	  isvisible(conditon,CreateSession.driver);
-      scrollDown(CreateSession.driver,decriptionCategory,photo);
-    }
-    
-    public void formatAndPriceClick()
-    {
-    	isvisible(formatAndPrice,CreateSession.driver);
-		formatAndPrice.click();
-    }
-    
-    public void pricePutClick()
-    {
-    	isvisible(pricePut,CreateSession.driver);
-		 pricePut.click();
-    }
-    
-    public void formatAndPriceBuyItNowEdit(String price)
-    {
-		 isvisible(formatAndPriceBuyItNow,CreateSession.driver);
+	 public void scrollAndClickFormatAndPriceCategory(String price){
+		 
+		 isvisible(conditon,driver);
+	     scrollDown(driver,decriptionCategory,photo);
+	     isvisible(formatAndPrice,driver);
+	   	 formatAndPrice.click();
+		 isvisible(pricePut,driver);
+		 pricePut.click();	
+		 isvisible(formatAndPriceBuyItNow,driver);
 		 formatAndPriceBuyItNow.sendKeys(price);
+		 isvisible(sellingBackButton,driver);
+		 sellingBackButton.click();		
 
+	    }
+	 
+	 public void shipingAndPickUpCategorySubCategoryClick() {
 		 
-    }
-    
-    public void shipingAndPickUpCategoryClick() {
-    isvisible(shipingAndPickUpCategory,CreateSession.driver);
-	 shipingAndPickUpCategory.click();
-    }
-    
-    public void addShippinAddressClick()
-    {
-    	 isvisible(addShippinAddress,CreateSession.driver);
-		 addShippinAddress.click();
-    }
-    
-    public void shippingAddressFlatRateClick(){
-    	
-		 isClickable(shippingAddressFlatRate,CreateSession.driver);
-		 shippingAddressFlatRate.click();
-    }
-    
-    public void shippingAddressOk() {
-    	 isvisible(shippingAddressOk,CreateSession.driver);
-		 shippingAddressOk.click();
-		
-    }
-    
-    public void shipingItemContinueClick() {
-    	 isvisible(shipingItemContinue,CreateSession.driver);
-		 shipingItemContinue.click();
+		 isvisible(shipingAndPickUpCategory,driver);
+		 shipingAndPickUpCategory.click();
+         isvisible(addShippinAddress,driver);
+         addShippinAddress.click();
+         isClickable(shippingAddressFlatRate,driver);
+         shippingAddressFlatRate.click();
+         isvisible(shippingAddressOk,driver);
+         shippingAddressOk.click();
+         isvisible(sellingBackButton,driver);
+		 sellingBackButton.click();		
 		 
+	 }
+	 
+	 public void shipingItemContinueClick() {
+    	 isvisible(shipingItemContinue,driver);
+    	 shipingItemContinue.click();
 		 
-    }
-    
-}
+	 
+    }}

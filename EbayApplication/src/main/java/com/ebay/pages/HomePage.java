@@ -2,7 +2,6 @@ package com.ebay.pages;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
-import com.test.ebay.utility.CreateSession;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 	
@@ -10,7 +9,6 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 		
 		public HomePage(AndroidDriver<WebElement> driver) {
 			super(driver);
-			
 		}
 
 		@AndroidFindBy(className="android.widget.ImageButton")
@@ -39,19 +37,19 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
        
 	
 	public void clickOnSignIn() {
-		isvisible(menuButton,CreateSession.driver);
+		isvisible(menuButton, driver);
 		menuButton.click();
-		isvisible(signInButton,CreateSession.driver);
+		isvisible(signInButton,driver);
 		signInButton.click();
 		
 	}
 	
 	public void serachForItme(String data) 
 	{
-		isvisible(homePageSerach,CreateSession.driver);
+		isvisible(homePageSerach,driver);
 		homePageSerach.click();
 		sendKeysSearch.sendKeys(data);
-		isvisible(serachFortheProduct,CreateSession.driver);
+		isvisible(serachFortheProduct,driver);
 		serachFortheProduct.click();
 		
 		
@@ -59,8 +57,8 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 	
 	public void backClick()
 	{
-		isvisible(AndroidButtons,CreateSession.driver);
-		clickOnAppBackButton(CreateSession.driver);
+		isvisible(AndroidButtons,driver);
+		clickOnAppBackButton(driver);
 	}
 	
 	public int getSizeForNoResults()
@@ -70,7 +68,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 	
 	public void menuButtonClick()
 	{
-		isvisible(menuButton,CreateSession.driver);
+		isvisible(menuButton,driver);
 		menuButton.click();
 	}
 

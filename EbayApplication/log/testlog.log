@@ -50,3 +50,51 @@ Session ID: f9b3c045-cb9c-4d78-a566-419970579007
 2019-02-01 05:56:36,296 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
 2019-02-01 09:23:44,428 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
 2019-02-01 09:56:28,380 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-02 15:41:15,609 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Brand']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-02 15:41:24,472 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-02 15:48:42,205 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Type']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-02 15:48:50,502 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-02 15:54:17,543 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.TextView[@text='Date of Packing, Import or Both']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-02 15:54:26,040 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-02 16:03:32,400 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.id: button_publish}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-02 16:03:42,087 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-02 16:32:06,961 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.id: button_publish}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-02 16:32:15,215 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-04 16:08:30,803 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:15:00,571 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:16:07,003 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:17:21,182 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:19:07,365 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:20:21,666 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:27:55,034 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:27:59,905 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:28:01,933 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:28:16,649 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:28:22,905 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:28:24,822 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:28:34,570 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:28:38,839 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:28:41,844 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:28:47,614 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:28:58,026 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:29:17,770 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-04 16:33:58,726 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:34:01,384 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:34:07,050 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:34:16,272 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:34:22,504 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:34:25,149 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:34:37,018 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:34:50,507 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:35:12,788 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
+2019-02-04 16:35:12,796 - com.ebay.pages.BasePage -INFO - Element not visible is null
+2019-02-04 16:35:26,178 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
+2019-02-04 16:40:34,058 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'by id or name "menuButton"' (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-04 16:43:09,484 - com.test.ebay.TestBase.TestBase -INFO - Failed test case issearchForitems
+2019-02-04 17:28:15,863 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.id: continueImage}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-04 17:28:24,843 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-04 17:32:22,811 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.CheckedTextView[@text='Does Not Apply']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-04 17:32:31,583 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-04 17:53:21,287 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
+2019-02-04 17:58:15,026 - com.ebay.pages.BasePage -INFO - Element not visible is Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.EditText[@text='none']}) (tried for 20 second(s) with 500 milliseconds interval)
+2019-02-04 17:58:24,193 - com.test.ebay.TestBase.TestBase -INFO - Failed test case isverifySellingItems
